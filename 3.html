@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body>
+    <script>
+		const products = [
+			 {
+				 id: 3,
+				 price: 200,
+			 },
+			 {
+				 id: 4,
+				 price: 900,
+			 },
+			 {
+				 id: 1,
+				 price: 1000,
+			 },
+		 ];
+		 
+		 products.forEach( (price, i) => products[i].price = Number(products[i].price) - (Number(products[i].price) * 15/100) );
+		 products.forEach(element => console.log(element));
+    </script>
+</body>
+</html>
